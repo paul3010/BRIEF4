@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style.css">
+    <title>PageJavascript</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header">
+            <div class="logo">
+                <img src="../images/jslo.png" id="logojs" alt="LogoSimplon">
+            </div>
+            <div class="titre">
+                <h1>BIENVENUE DANS LE MONDE JavaScript !</h1>
+            </div>
+
+            </div>
+        </header>
+        <nav>
+            <ul class="nav">
+
+                <li class="nav-item">
+                    <a href="../Accueil.html" class="nav-link">Accueil</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#maths" class="nav-link">Maths</a>
+                    <div id="maths" class="nav-submenu">
+                        <a href="../exercices/Exercise 2 .html" class="nav-submenu-link">Exercise 2</a>
+                        <a href="../exercices/Exercise 4.html" class="nav-submenu-link">Exercise 4</a>
+                        <a href="../exercices/Exercise 9.html" class="nav-submenu-link">Exercise 9</a>                        
+                        <a href="../exercices/exercice10.html" class="nav-submenu-link">Exercise 10</a>
+                        <a href="../exercices/exercice11.html" class="nav-submenu-link">Exercise 11</a>
+                        <a href="../exercices/exercice12.html" class="nav-submenu-link">Exercise 12</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#String" class="nav-link">String</a>
+                    <div id="String" class="nav-submenu">
+                        <a href="../exercices/Exercise 1.html" class="nav-submenu-link">Exercise 1</a>
+                        <a href="../exercices/Exercise 3.html" class="nav-submenu-link">Exercise 3</a>                        
+                        <a href="../exercices/Exercise 8.html" class="nav-submenu-link">Exercise 8</a>                        
+                        <a href="../exercices/exercice13.html" class="nav-submenu-link">Exercise 13</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#dates" class="nav-link">Dates</a>
+                    <div id="dates" class="nav-submenu">
+                        <a href="../exercices/Exercise 5.html" class="nav-submenu-link">Exercise 5</a>
+                        <a href="../exercices/Exercise 6.html" class="nav-submenu-link">Exercise 6</a>
+                        <a href="../exercices/Exercise 7.html" class="nav-submenu-link">Exercise 7</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <article id="titreexo">
+                <h2>JavaScript TD1 - EXERCISE 3</h2>
+            </article>
+            <article id="enonceexo">
+                <h3>Enoncé</h3>
+                <p>
+                    Ecrire le code permettant de saisir le prénom et la classe d’un étudiant. <br>
+                    Si le prénom et la classe sont différents de chaine vide, alors afficher le message : <br>
+                    Bonjour prénom votre classe est classe.
+                </p>
+            </article>
+            <article id="javaexo">
+                <h3>Corrigé</h3>
+                <br>
+                <br>
+                <img src="../images/EX3.PNG" alt="correctionEX3">
+                <br>
+                <br>
+            </article>
+            <article id="execution">
+                <h3>Exécution</h3>
+                <label for="prenom">quelle est ton prénom?</label>
+                <input type="text" id="prenom" value="">
+                <br><br>
+                <label for="classe">quelle est ta classe?</label>
+                <input type="text" id="classe" value="">
+                <br><br>
+                <button onclick="info()">Envoyer</button>
+                <br><br>
+                <p id="prenomclasse"></p>
+                <br> <br>
+                <script>
+                    function info(){
+                    let prenom = document.getElementById("prenom").value;
+                    let classe = document.getElementById("classe").value;
+                    if (prenom!=null);
+                    if (classe!=null);
+                    
+                    document.getElementById("prenomclasse").innerText=("Ton prénom est "+prenom+"Ta classe est "+classe);
+                    }
+                </script>
+
+            </article>
+        </section>
+        <footer>
+            <p>
+                @ Copyright - Serge Jr. - Paul - Valérie.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

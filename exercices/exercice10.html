@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style.css">
+    <title>PageJavascript</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header">
+            <div class="logo">
+                <img src="../images/jslo.png" id="logojs" alt="LogoSimplon">
+            </div>
+            <div class="titre">
+                <h1>BIENVENUE DANS LE MONDE JavaScript !</h1>
+            </div>
+
+            </div>
+        </header>
+        <nav>
+            <ul class="nav">
+
+                <li class="nav-item">
+                    <a href="../Accueil.html" class="nav-link">Accueil</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#maths" class="nav-link">Maths</a>
+                    <div id="maths" class="nav-submenu">
+                        <a href="../exercices/Exercise 2 .html" class="nav-submenu-link">Exercise 2</a>
+                        <a href="../exercices/Exercise 4.html" class="nav-submenu-link">Exercise 4</a>
+                        <a href="../exercices/Exercise 9.html" class="nav-submenu-link">Exercise 9</a>                        
+                        <a href="../exercices/exercice10.html" class="nav-submenu-link">Exercise 10</a>
+                        <a href="../exercices/exercice11.html" class="nav-submenu-link">Exercise 11</a>
+                        <a href="../exercices/exercice12.html" class="nav-submenu-link">Exercise 12</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#String" class="nav-link">String</a>
+                    <div id="String" class="nav-submenu">
+                        <a href="../exercices/Exercise 1.html" class="nav-submenu-link">Exercise 1</a>
+                        <a href="../exercices/Exercise 3.html" class="nav-submenu-link">Exercise 3</a>                        
+                        <a href="../exercices/Exercise 8.html" class="nav-submenu-link">Exercise 8</a>                        
+                        <a href="../exercices/exercice13.html" class="nav-submenu-link">Exercise 13</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#dates" class="nav-link">Dates</a>
+                    <div id="dates" class="nav-submenu">
+                        <a href="../exercices/Exercise 5.html" class="nav-submenu-link">Exercise 5</a>
+                        <a href="../exercices/Exercise 6.html" class="nav-submenu-link">Exercise 6</a>
+                        <a href="../exercices/Exercise 7.html" class="nav-submenu-link">Exercise 7</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <article id="titreexo">
+                <h2>Exercice 10</h2>
+            </article>
+            <article id="enonceexo">
+                <h3>Enoncé</h3>
+                On veut calculer le poids idéal d'une personne. Pour cela, on doit avoir trois informations : 
+                sa taille T en cm, son âge A en années, et son sexe S (qui sera donné par un champ texte dans lequel on écrira "homme" ou "femme"). 
+                La formule est : 
+                <ul>
+                    <li>pour un homme : (3*T-250)*(A+270)/1200 </li>
+                    <li>pour une femme : (T/2 -30)*(180+1)/200</li>
+                </ul>
+                
+
+ <br> <br>
+
+            </article>
+            <article id="javaexo">
+                <h3>Corrigé</h3>
+                <img src="../images/Exo10html.png" alt="">
+                <br>
+                <img src="../images/Exo10js.png" alt="">
+
+
+            </article>
+            <article id="execution">
+                <h3>Exécution</h3>
+
+
+                <input type='text' placeholder='La taille en cm' id='Taille'></input>  <br>
+                <input type='text' placeholder='Âge' id='Age'></input> <br>
+                <input type='text' placeholder='Masculin ou Feminin' id='Sexe'></input> <br> <br>
+
+                <input type='submit' id='submit'></input> <br> <br>
+                <div id="total"></div>
+                <br>
+
+
+                <script>
+                document.getElementById('submit').onclick = function(){
+                var T = (document.getElementById('Taille').value);
+                var A = (document.getElementById('Age').value);
+                var S = (document.getElementById('Sexe').value);
+
+                if(S == "Masculin") {
+                    Homme = (3*T-250)*(A+270)/1200; 
+                    document.getElementById('total').innerHTML = Homme} 
+                
+                else if (S == "Feminin") {
+                    Femme = (T/2-30)*(180+1)/200;
+                    document.getElementById('total').innerHTML = Femme}    
+
+                else {
+                    document.getElementById('total').innerHTML = "Error!";
+}
+  
+                }
+                </script>
+
+            </article>
+        </section>
+        <footer>
+            <p>
+                @ Copyright - Serge Jr. - Paul - Valérie.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

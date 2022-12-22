@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style.css">
+    <title>PageJavascript</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header">
+                <div class="logo">
+                    <img src="../images/jslo.png" id="logojs" alt="LogoSimplon">
+                </div>
+                <div class="titre">
+                    <h1>BIENVENUE DANS LE MONDE JavaScript !</h1>
+                </div>
+
+            </div>
+        </header>
+        <nav>
+            <ul class="nav">
+
+                <li class="nav-item">
+                    <a href="../Accueil.html" class="nav-link">Accueil</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#maths" class="nav-link">Maths</a>
+                    <div id="maths" class="nav-submenu">
+                        <a href="../exercices/Exercise 2 .html" class="nav-submenu-link">Exercise 2</a>
+                        <a href="../exercices/Exercise 4.html" class="nav-submenu-link">Exercise 4</a>
+                        <a href="../exercices/Exercise 9.html" class="nav-submenu-link">Exercise 9</a>                        
+                        <a href="../exercices/exercice10.html" class="nav-submenu-link">Exercise 10</a>
+                        <a href="../exercices/exercice11.html" class="nav-submenu-link">Exercise 11</a>
+                        <a href="../exercices/exercice12.html" class="nav-submenu-link">Exercise 12</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#String" class="nav-link">String</a>
+                    <div id="String" class="nav-submenu">
+                        <a href="../exercices/Exercise 1.html" class="nav-submenu-link">Exercise 1</a>
+                        <a href="../exercices/Exercise 3.html" class="nav-submenu-link">Exercise 3</a>                        
+                        <a href="../exercices/Exercise 8.html" class="nav-submenu-link">Exercise 8</a>                        
+                        <a href="../exercices/exercice13.html" class="nav-submenu-link">Exercise 13</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#dates" class="nav-link">Dates</a>
+                    <div id="dates" class="nav-submenu">
+                        <a href="../exercices/Exercise 5.html" class="nav-submenu-link">Exercise 5</a>
+                        <a href="../exercices/Exercise 6.html" class="nav-submenu-link">Exercise 6</a>
+                        <a href="../exercices/Exercise 7.html" class="nav-submenu-link">Exercise 7</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <article id="titreexo">
+                <h2>JavaScript TD1 - EXERCISE 8</h2>
+            </article>
+            <article id="enonceexo" style="text-align: justify;">
+                <h3>Enoncé</h3>
+                <p style="font-size: 18px;">
+                    Ecrire le code permettant de saisir l’âge d’une personne. Et d’afficher le message correspondant.
+                <ol style="font-size: 18px;">
+                    <li>Si l’âge est inférieur ou égal à zéro, alors afficher un message d’erreur,</li>
+                    <li>Si l’âge est inférieur ou égal à 13, alors afficher "vous êtes encore trop jeune",</li>
+                    <li>Si l’âge est compris entre 13 et 18, alors afficher "Vous êtes encore mineur(e)",</li>
+                    <li>Si l’âge est compris entre 18 et 25, alors afficher "Vous êtes déjà majeur(e),</li>
+                    <li>Sinon afficher "Ne vous vieillissez donc pas !".</li>
+                </ol>
+
+                </p>
+            </article>
+            <article id="javaexo">
+                <h3>Corrigé</h3>
+                <br>
+                <br>
+                <img src="../images/EX8.PNG" alt="correctionEX8">
+                <br>
+                <img src="../images/EX8JS.PNG" alt="correctionEX8">
+                <br>
+            </article>
+            <article id="execution">
+                <h3>Exécution</h3>
+                <button onclick="semaine()">Clickez ici!</button>
+                <br>
+                <p id="result"></p>
+                <script>
+                    function semaine() {
+                        let age = window.prompt("saisissez votre age");
+                        if (age <= 0) {
+                            document.write("message d'erreur");
+                        } else if (age < 13) {
+                            document.write("vous êtes encore trop jeune");
+                        } else if (age >= 13 && age < 18) {
+                            document.write("Vous êtes encore mineur(e)");
+                        }
+                        else if (age > 18 && age < 25) {
+                            document.write("Vous êtes encore mineur(e)");
+                        }
+                        else {
+                            document.write("Ne vous vieillissez donc pas");
+                        }
+                    }
+                </script>
+            </article>
+        </section>
+        <footer>
+            <p>
+                @ Copyright - Serge Jr. - Paul - Valérie.
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
